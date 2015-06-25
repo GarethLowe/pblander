@@ -13,14 +13,11 @@
     <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
   </PropertyGroup>
-  <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
-  </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="assets\images\phaser.png" />
@@ -33,9 +30,7 @@
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="phaser\p2.d.ts" />
     <TypeScriptCompile Include="phaser\phaser.comments.d.ts" />
-    <TypeScriptCompile Include="phaser\phaser.d.ts" />
     <TypeScriptCompile Include="phaser\pixi.comments.d.ts" />
-    <TypeScriptCompile Include="phaser\pixi.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="phaser\phaser.map" />
