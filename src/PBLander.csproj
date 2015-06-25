@@ -28,15 +28,13 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="game\pblander.ts" />
     <TypeScriptCompile Include="phaser\p2.d.ts" />
     <TypeScriptCompile Include="phaser\phaser.comments.d.ts" />
     <TypeScriptCompile Include="phaser\pixi.comments.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="phaser\phaser.map" />
-    <None Include="pblander - FTP.pubxml" />
-    <None Include="pblander - Web Deploy.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

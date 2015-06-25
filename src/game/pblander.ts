@@ -29,7 +29,7 @@ class SimpleGame {
         this.game.add
             .tween(logo.scale)
             .to({ x: 1, y: 1 },
-                2000,
+                1000,
                 Phaser.Easing.Bounce.Out,
                 true);
     }
