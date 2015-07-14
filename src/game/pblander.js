@@ -1,3 +1,4 @@
+/// <reference path="../phaser/phaser.comments.d.ts" />
 var SimpleGame = (function () {
     function SimpleGame() {
         this.game = new Phaser.Game(800, 600, Phaser.AUTO, "content", {
@@ -12,11 +13,10 @@ var SimpleGame = (function () {
         var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "splash");
         logo.anchor.setTo(0.5, 0.5);
         logo.scale.setTo(0.2, 0.2);
-        this.game.add.tween(logo.scale).to({ x: 1, y: 1 }, 1000, Phaser.Easing.Bounce.Out, true);
+        this.game.add.tween(logo.scale).to({ x: 1, y: 1 }, 10000, Phaser.Easing.Bounce.Out, true);
     };
     return SimpleGame;
 })();
 window.onload = function () {
     var game = new SimpleGame();
 };
-//# sourceMappingURL=pblander.js.map

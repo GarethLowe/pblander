@@ -1,3 +1,5 @@
+/// <reference path="../phaser/phaser.comments.d.ts" />
+
 class SimpleGame {
     
     game: Phaser.Game;
@@ -29,7 +31,7 @@ class SimpleGame {
         this.game.add
             .tween(logo.scale)
             .to({ x: 1, y: 1 },
-                1000,
+                10000,
                 Phaser.Easing.Bounce.Out,
                 true);
     }
