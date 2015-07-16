@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-	- "0.12"
+    - "0.12"
 	
 before_script:
-	- npm install -g typescript
+    - npm install -g typescript
 	
 script: tsc "./src/game/pblander.ts"
