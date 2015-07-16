@@ -28,7 +28,7 @@ EXIT 999
 :Build
 ECHO Building TypeScript: pblander.ts (using %tsc%)
 %tsc% src\game\pblander.ts
-xcopy %DEPLOYMENT_SOURCE% %DEPLOYMENT_TARGET% /S /Y
+xcopy %DEPLOYMENT_SOURCE%\src %DEPLOYMENT_TARGET% /S /Y
 
 :Error
 EXIT %ERRORLEVEL%
