@@ -11,7 +11,7 @@ class SimpleGame {
             Phaser.AUTO,
             "content", {
                 preload: this.preload,
-                create: this.create
+                create: this.cr eate
             });
     }
 
