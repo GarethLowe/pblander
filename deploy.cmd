@@ -5,9 +5,10 @@ IF %ERRORLEVEL% NEQ 0 (
 	GOTO Error
 )
 
-
 IF (%1%=="") GOTO SetTsc
 cd %1%
+
+GOTO Clean
 
 :SetTsc
 IF EXIST ".\node_modules\.bin\tsc.cmd" (
@@ -24,6 +25,10 @@ IF EXIST "%ProgramFiles%\Microsoft Sdks\Typescript\0.9\tsc.exe" (
 GOTO
 ECHO TypeScript compiler not found
 EXIT 999
+
+:Clean
+ECHO Cleaning folder
+del %DEPLOYMENT_TARGET%\*.* /S /Q
 
 :Build
 ECHO Building TypeScript: pblander.ts (using %tsc%)
