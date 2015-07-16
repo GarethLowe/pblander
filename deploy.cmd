@@ -26,7 +26,7 @@ ECHO TypeScript compiler not found
 EXIT 999
 
 :Build
-ECHO Building TypeScript: Payboard.Site.js (using %tsc%)
+ECHO Building TypeScript: pblander.ts (using %tsc%)
 %tsc% src\game\pblander.ts
 
 :Error
